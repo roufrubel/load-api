@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <section class="container">
+        <h2 class="text-center text-success my-3">Search Your Book Here</h2>
+
+        <!-- Search input -->
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input id="search-field" type="text" class="form-control" placeholder="Search here the book you want to get"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="inputBookSearch()" class="btn btn-secondary" type="button"
+                id="button-search">Search</button>
+        </div>
+
+
+        <div>
+            <!-- show error -->
+            <h5 id="show-error" class="bg-secondary text-center text-warning w-50 mx-auto">error! enter a valid
+                book
+                name
+                please
+            </h5>
+            <!-- add spinner -->
+            <div id="spinner" class="spinner-border" style="margin-left: 45%;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- book found numbers -->
+        <h4 class="bg-secondary text-warning w-50 text-center mx-auto" id="book-found-numbers"></h4>
+
+        <!--display book search result -->
+        <div id="book-search-result" class=" my-5 row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </section>
+
+
+    <!-- js bunddle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- connect with js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
